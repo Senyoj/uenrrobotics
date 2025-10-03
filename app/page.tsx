@@ -30,7 +30,7 @@ const Homepage = () => {
             </p>
             {/* <button className="mt-8 px-6 py-3 bg-gray-950  text-white  rounded-full border-2 border-transparent hover:bg-white hover:text-gray-800 hover:border-gray-800 transition-all duration-300 group relative overflow-hidden"> */}
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white dark:bg-cyan-400/10 rounded-full group-hover:w-32 group-hover:h-32"></span>
-              <span className="relative">// Get Involved</span>
+            <span className="relative">{"//"}3 Get Involved</span>
           </div>
         </div>
       </section>
@@ -152,7 +152,7 @@ const Homepage = () => {
             </h3>
             <p className="mt-4 text-lg text-gray-600">
               From autonomous boats to intelligent robotics, explore the
-              technologies we're building.
+              technologies we are building.
               </p>
           </div>
 
@@ -309,7 +309,7 @@ const Homepage = () => {
                   </h3>
                   <p className="mt-4 text-gray-600 flex-grow">
                     We delve into the challenges and triumphs of developing our
-                    latest autonomous systems, pushing the boundaries of what's
+                    latest autonomous systems, pushing the boundaries of what is
                     possible with robotics in West Africa...
                   </p>
                 </div>
