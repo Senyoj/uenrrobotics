@@ -5,10 +5,10 @@ import React, { useState, useEffect } from "react";
 
 import { navlinks, ProductMegaMenu , SolutionMegaMenu} from "@/data/data";
 
-type MegaMenu = ProductMegaMenu | SolutionMegaMenu;
+type MegaMenu = ProductMegaMenu | SolutionMegaMenu | undefined;
 
 const isProductMegaMenu = (menu: MegaMenu): menu is ProductMegaMenu =>
-  "featuredProduct" in menu;
+  menu !== undefined && "featuredProduct" in menu;
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
