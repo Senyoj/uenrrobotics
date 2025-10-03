@@ -28,10 +28,9 @@ const Homepage = () => {
               industrial automation, engineered by the{" "}
               <b>UENR Robotics Club (URC).</b>
             </p>
-            <button className="mt-8 px-6 py-3 bg-gray-950  text-white  rounded-full border-2 border-transparent hover:bg-white hover:text-gray-800 hover:border-gray-800 transition-all duration-300 group relative overflow-hidden">
+            {/* <button className="mt-8 px-6 py-3 bg-gray-950  text-white  rounded-full border-2 border-transparent hover:bg-white hover:text-gray-800 hover:border-gray-800 transition-all duration-300 group relative overflow-hidden"> */}
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white dark:bg-cyan-400/10 rounded-full group-hover:w-32 group-hover:h-32"></span>
               <span className="relative">// Get Involved</span>
-            </button>
           </div>
         </div>
       </section>
@@ -154,7 +153,7 @@ const Homepage = () => {
             <p className="mt-4 text-lg text-gray-600">
               From autonomous boats to intelligent robotics, explore the
               technologies we're building.
-            </p>
+              </p>
           </div>
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
@@ -373,8 +372,7 @@ const Homepage = () => {
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl">
               Become a part of a vibrant community dedicated to pushing the
-              boundaries of robotics and AI.
-            </p>
+              boundaries            </p>
             <div className="mt-8">
               <a
                 href="/join"
