@@ -3,8 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
-import { navlinks, ProductMegaMenu } from "@/data/data";
-const isProductMegaMenu = (menu: any): menu is ProductMegaMenu => 'featuredProduct' in menu;
+import { navlinks, ProductMegaMenu , SolutionMegaMenu} from "@/data/data";
+
+type MegaMenu = ProductMegaMenu | SolutionMegaMenu;
+
+const isProductMegaMenu = (menu: MegaMenu): menu is ProductMegaMenu =>
+  "featuredProduct" in menu;
+
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState("Curiosity");
@@ -173,7 +178,7 @@ const Navbar = () => {
             {navlinks.map((item) => (
               <li key={item.name}>
                 <div className="flex justify-between items-center" onClick={() => !item.megaMenu && !item.sublinks ? setIsMobileMenuOpen(false) : undefined}>
-                  <Link href={item.href} className="text-lg font-medium" onClick={() => !item.megaMenu && !item.sublinks ? setMobileMenuOpen(false) : undefined}>
+                  <Link href={item.href} className="text-lg font-medium" onClick={() => !item.megaMenu && !item.sublinks ? setIsMobileMenuOpen(false) : undefined}>
                     {item.name}
                   </Link>
                   {(item.megaMenu || (item.sublinks && item.sublinks.length > 0)) && (
