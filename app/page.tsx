@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { ProjectCards } from "@/data/data";
 import React from "react";
 
 const Homepage = () => {
@@ -28,9 +29,10 @@ const Homepage = () => {
               industrial automation, engineered by the{" "}
               <b>UENR Robotics Club (URC).</b>
             </p>
-            {/* <button className="mt-8 px-6 py-3 bg-gray-950  text-white  rounded-full border-2 border-transparent hover:bg-white hover:text-gray-800 hover:border-gray-800 transition-all duration-300 group relative overflow-hidden"> */}
+            <button className="mt-8 px-6 py-3 bg-gray-950  text-white  rounded-full border-2 border-transparent hover:bg-white hover:text-gray-800 hover:border-gray-800 transition-all duration-300 group relative overflow-hidden">
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white dark:bg-cyan-400/10 rounded-full group-hover:w-32 group-hover:h-32"></span>
-            <span className="relative">{"//"}3 Get Involved</span>
+              <span className="relative">{"// "}Get Involved</span>
+            </button>
           </div>
         </div>
       </section>
@@ -153,37 +155,11 @@ const Homepage = () => {
             <p className="mt-4 text-lg text-gray-600">
               From autonomous boats to intelligent robotics, explore the
               technologies we are building.
-              </p>
+            </p>
           </div>
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                name: "Explorer",
-                href: "/products/explorer",
-                imageSrc: "/explorer.jpg",
-              },
-              {
-                name: "Curiosity",
-                href: "/products/curiosity",
-                imageSrc: "/curiosity-2.jpg",
-              },
-              {
-                name: "Autonomous Mobile Robots",
-                href: "/products/amr",
-                imageSrc: "/amr.jpg",
-              },
-              {
-                name: "Robotic Arm",
-                href: "/products/robotic-arm",
-                imageSrc: "/arm.jpg",
-              },
-              {
-                name: "Robotic Head",
-                href: "/products/robotic-head",
-                imageSrc: "/head.jpg",
-              },
-            ].map((product) => (
+            {ProjectCards.map((product) => (
               <div key={product.name} className="group relative">
                 <a href={product.href} className="block">
                   <div className="relative h-80 w-full overflow-hidden">
@@ -367,12 +343,13 @@ const Homepage = () => {
               className="object-cover -z-20"
             />
             <div className="absolute inset-0 bg-gray-900/60 -z-10"></div>
-            <h2 className="text-5xl md:text-6xl font-extrabold text-white">
+            <h2 className="text-3xl md:text-6xl font-extrabold text-white">
               Join Our Community of Innovators
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl">
               Become a part of a vibrant community dedicated to pushing the
-              boundaries            </p>
+              boundaries{" "}
+            </p>
             <div className="mt-8">
               <a
                 href="/join"
@@ -386,7 +363,7 @@ const Homepage = () => {
       </section>
 
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

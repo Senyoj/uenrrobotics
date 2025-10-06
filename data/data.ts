@@ -184,3 +184,37 @@ export const navlinks: NavLinkType[] = [
   },
   { name: "Blog", href: "/blog" },
 ];
+
+export const ProjectCards = [
+  {
+    name: "Explorer",
+    href: "/products/explorer",
+    imageSrc: "/explorer.jpg",
+  },
+  {
+    name: "Curiosity",
+    href: "/products/curiosity",
+    imageSrc: "/curiosity-2.jpg",
+  },
+  {
+    name: "Autonomous Mobile Robots",
+    href: "/products/amr",
+    imageSrc: "/amr.jpg",
+  },
+  {
+    name: "Robotic Arm",
+    href: "/products/robotic-arm",
+    imageSrc: "/arm.jpg",
+  },
+  {
+    name: "Robotic Head",
+    href: "/products/robotic-head",
+    imageSrc: "/head.jpg",
+  },
+];
+
+
+export const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+];
